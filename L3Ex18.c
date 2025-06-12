@@ -1,18 +1,15 @@
 #include <stdio.h>
 #include <locale.h>
 
-void hoje(int dia, int mes, int ano) {
-    printf("Hoje é %02d/%02d/%04d\n", dia, mes, ano);
+void hoje(int data[3]) {
+    printf("Hoje é %02d/%02d/%04d\n", data[0], data[1], data[2]);
 }
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    int dia = 12, mes = 07, ano = 2012;
+    int data[3] = {12, 07, 2012};
 
-    hoje( dia,  mes,  ano);
-
-
-
+    hoje(data);
 
     return 0;
 }

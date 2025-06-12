@@ -5,7 +5,7 @@ void cria_matriz(int M, int N, int matriz[M][N]) {
     int i, j;
     for (i = 0; i < M; i++) {
         for (j = 0; j < N; j++) {
-            matriz[i][j] = (rand() % 11) - 5; // Preenche com números aleatórios de 0 a 99
+            matriz[i][j] = (rand() % 11) - 5; // Preenche com números aleatórios de -5 a 5
         }
     }
 }

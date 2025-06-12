@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void cumprimento() {
+void cumprimenta() {
 
     printf("Olá, mundo!\n");
 }
 int main(){
-    cumprimento();
+    cumprimenta();
 }
